@@ -7,30 +7,22 @@ body {
     background-color: #000000;
 }
 
-#background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0.5%;
-    z-index: -1; 
-}
-
-@font-face {
-    font-family: 'Font';
-    src: url('Font.ttf');
-}
-
 header {
     margin-top: 5dvh;
     text-align: center;
 }
 
-#avatar {
-    border-radius: 100%;
-    user-select: none;
-    -webkit-user-select: none;
-    pointer-events: none;
+main {
+    margin-top: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'Font';
+    src: url('Font.ttf');
 }
 
 h1 {
@@ -52,12 +44,20 @@ h3 {
     -webkit-user-select: none;
 }
 
-main {
-    margin-top: 16px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0.5%;
+    z-index: -1; 
+}
+
+#avatar {
+    border-radius: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    pointer-events: none;
 }
 
 .button {
